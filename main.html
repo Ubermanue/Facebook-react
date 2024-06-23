@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto React</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  text-align: center;
+  padding: 20px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4267B2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #204d74;
+}
+</style>
+</head>
+<body>
+
+<h1>Auto React</h1>
+
+<div>
+  <button class="button" onclick="react('like')">Like</button>
+  <button class="button" onclick="react('love')">Love</button>
+  <button class="button" onclick="react('haha')">Haha</button>
+  <button class="button" onclick="react('wow')">Wow</button>
+  <button class="button" onclick="react('sad')">Sad</button>
+  <button class="button" onclick="react('angry')">Angry</button>
+</div>
+
+<script>
+function react(reaction) {
+  alert("Reacted with " + reaction);
+  // You can add code here to send the reaction to Facebook API for actual auto reaction
+}
+</script>
+
+</body>
+</html>
